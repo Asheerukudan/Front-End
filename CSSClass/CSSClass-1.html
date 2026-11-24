@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading Style Sheet</title>
+    <style>
+       /* Selectors */
+     h1{ color: blue;}
+     #par2{color: yellowgreen;}
+    .group-1{color: red;}
+    .group-3{background-color: black; color: #fff;}
+        /* select Multiple */
+        span, .lab-1{color: yellow;}
+        /* child descendant */
+        div p {
+            color: red;
+        }
+        .about>p {
+            color: blue;
+        }
+        .about>section>p {
+            
+        }
+</style>
+    
+</head>
+<body>
+    <h1>Introduction to CSS - Cascading Stylesheet</h1>
+    <h1>Introduction to CSS - Cascading Stylesheet</h1>
+
+
+    <p class="par1">Hello world</p>
+    <p class="par2">Hello world</p>
+
+    <div class="group1">Hello World</div>
+    <div class="group1">Hello World</div>
+    <div class="group1">Hello World</div>
+    <div class="group1">Hello World</div>
+    <div class="group1">Hello World</div>
+    <div class="group2">Hello World</div>
+    <div class="group3">Hello World</div>
+    <div class="group-3 group-1">lorem3</div>    
+
+    <!-- select Multiple -->
+    <span>Lorem, ipsum. </span>
+    <label for="" class="lab-1">Lorem, ipsum dolor.</label>
+    <!-- child and descendant -->
+     <div>
+        <p>child</p>
+        <section>
+            <p>descendant</p>
+        </Section>
+        <h3>Me</h3>
+     </div>
+
+
+</body>
+</html>

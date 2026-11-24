@@ -38,7 +38,7 @@ Create a simple personal portfolio webpage.
 8. Add a **Back to Top** link.
 9. Use semantic HTML elements such as `<header>`, `<nav>`, `<main>`, `<section>` and `<footer>`.
 
-**Design inspiration:** [Personal portfolio website examples](https://www.google.com/search?tbm=isch&q=simple+personal+portfolio+website+design)
+**Design inspiration:** [Personal portfolio website examples] 
 
 ---
 
