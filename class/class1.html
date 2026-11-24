@@ -1,69 +1,54 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title> My First Web Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* selectors  */
+        h1{color:blue}
+        
+        #par2{color:yellowgreen}
+        .group-1{color:red}
+        .group-3{background: black; color:#FFF}
+
+        /* select Multiple  */
+        span, .lab-1{color:yellow}
+
+        /* child and descendant */
+        div p {
+            color:red;
+        }
+        .about>p{
+            color:blue;
+        }
+    </style>
 </head>
-
 <body>
-    Hello World
-    <h1> Heading 1 </h1>
-    <h2> Heading 2 </h2>
-    <h3> Heading 3 </h3>
-    <h4> Heading 4 </h4>
-    <h5> Heading 5 </h5>
-    <h6> Heading 6 </h6>
-    <h5> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat aperiam, ducimus ut nesciunt
-        dicta, quidem odio vitae cum veniam a eaque? Voluptatibus iste non sed ex debitis id. Ex?</h5>
+    <h1> Introduction to CSS  - Cascading Stylesheet </h1>
+    <h1> Introduction to CSS  - Cascading Stylesheet </h1>
+    <p id="par1"> Hello World</p>
+    <p id="par2"> Hello World</p>
 
-    <h3>
-        Lorem, ipsum dolor.
-    </h3>
+    <div class="group-1"> Hello World </div>
+    <div class="group-1"> Hello World </div>
+    <div class="group-1"> Hello World </div>
+    <div class="group-1"> Hello World </div>
+    <div class="group-1"> Hello World </div>
+    <div class="group-2"> Hello World </div>
+    <div class="group-3 group-1">  Lorem, ipsum dolor.</div>
 
-    <!-- Comment  -->
-     <p> Plain or body text</p>
-     <p> Another plain text </p>
-     
-     <!-- HTML  List 
-      ol : ordered list
-      ul : unordered list
-      li : list item 
-      ol types : 1, A, i, I, a
-      ul types : disc, none, circle, square
-     
-     -->
-     
-     <ul type="square">
-        <li> CSS</li>
-        <li>HTML </li>
-        <li>Python</li>
-     </ul>
-     <ol type="i" reversed>
-        <li> Red</li>
-        <li> Blue</li>
-        <li>Green</li>
-     </ol>
+    <!-- Select Multiple  -->
+     <span> Lorem, ipsum.</span>
+     <label for="" class="lab-1"> Lorem, ipsum dolor.</label>
 
-     <!-- HTML formating tags and Entities -->
-      <b> Bold text </b>
-      <u> Underline </u>
-      <i> Italic</i>
-      <sub> Subscript</sub>
-      <sup>Superscript</sup>
-      <del>Cancelled text </del>
-      <center> Centered Text </center>
-      <kbd> Key code </kbd>
-      
-
-      <p> To print press  <kbd> CTRL + P</kbd> </p>
-      
-      <!-- entities : Symbols  -->
-       &euro;
-       <!-- Another line  -->
-
-       <!-- table -->
-
-
+     <!-- child and descendant  -->
+    <div class="about">
+            <p> Child </p>
+            <section>
+                <p> Descendant </p>
+            </section>
+            <h3> Me</h3>
+    </div>
 </body>
-
 </html>
