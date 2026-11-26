@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign_Up</title>
+    <title>Signup</title>
 </head>
 <h1>
-    <b>
-        <i>
-            <center>Sign_Up Form</center>
-        </i>
-    </b>
+    Signup Form
 </h1>
-<h2><b><i>Please fill in this form to create an account </i></b></h2>
+<h4> Please fill in this form to create an account </h4>
 
 <body>
     <form action="" method="post">
-        <label for=""><b>Email</b></label>
-        <br><input type="text" name="yrname" id="" placeholder="Enter Email">
-    <br> 
-    <label>Password</label>
-    <br>
-        <input type="text" name="password" placeholder="Password">
-        <br>
-    <label>Repeat Password</label>
-    <br>
-        <input type="text" name="password" placeholder="Repeat Password">
+        <fieldset>
+            <label for=""><b>Email</b></label>
+            <input type="text" name="yrname" id="" placeholder="Enter Email">
+        </fieldset>
+        
+        <fieldset>
+            <label>Password</label>
+            <input type="text" name="password" placeholder="Password">
+        </fieldset>
+        
+        <fieldset>
+            <label>Repeat Password</label>
+            <input type="text" name="password" placeholder="Repeat Password">
+        </fieldset>
+            
 
-        <br>
-         <input type="checkbox" name="" id="">
-        <lable>Remember Me</lable> <br>
-        <span>By Creating an account you agree to our <a href="">Terms and Privacy.</a></span>
-       <br> <label for=""></label> <button type="reset">Cancel</button>
-       <button>Sign Up</button>
-</form>
+        <fieldset>
+            <input type="checkbox" name="" id="">
+            <lable>Remember Me</lable>
+        </fieldset>
+
+        <p>By Creating an account you agree to our <a href="">Terms and Privacy.</a></p>
+        <button type="reset">Cancel</button>
+        <button type="submit">Sign Up</button>
+    </form>
 </body>
+
 </html>
