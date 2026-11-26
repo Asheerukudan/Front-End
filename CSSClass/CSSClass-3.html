@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        .btn1{
+            background-color: orange;
+            padding: 10px;
+            color: #fff;
+            font-weight: bold;
+            border: 0;
+            margin: 10px;
+            /* border-radius: 5px */
+        }
+        .btn1:hover{
+            background: orangered;
+            border-radius: 40px;
+        }
+        .btn2{
+            background-color: transparent;
+            border: 2px solid orange;
+            color: orange;
+            padding: 15px 40px;
+            margin: 10px;
+            &:hover{
+                background: orange;
+                color: #fff;
+            }
+        }
+        .btn3{
+            background: transparent;
+            border: 0;
+            font-weight: bold;
+            &:hover{
+                color: red;
+            }
+
+        }
+        /* display */
+        .test-1{
+            display: none;
+            display: inline;
+            background: orange;
+        }
+        .test-2{
+            display: block;
+        }
+        /* table */
+        .table1{
+            width: 90%;
+            margin: 40px auto;
+            border: 4px solid orange;
+            border-collapse: collapse;
+    
+        }
+            .table1 thead{
+            background: orange;}
+        .table1 th, .table1 td{
+            border: 2px solid orange;
+            padding: 6px;
+        }
+        /* class work table 2 */
+        .table2{
+            background-color: rgb(49, 8, 88);
+            border-radius: 15px;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+            padding: 20px;
+            border-collapse: collapse;
+            width: 80%;
+       
+
+    
+        }
+        .table2 th, .table2 td{
+            border: 0.5px solid rgba(217, 196, 196, 0.237);
+            padding: 15px;
+         
+        
+        }
+        .table2 tr{
+                    &:hover{
+                background-color: rgba(135, 207, 235, 0.268);
+            }
+        }
+
+        .card{
+            background: orangered;
+            color: #fff;
+            padding: 10px;
+            margin: 4px 0;
+            width: 90%;
+            max-width: 180px;
+        }
+        .container{
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            /*  */
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row;
+            flex-direction: row-reverse;
+            /* flex-direction: column;  */
+            
+            justify-content: center;
+            justify-content: end;
+            justify-content: space-around;
+            justify-content: space-between;
+            background: yellowgreen;
+            height:400px;
+            align-items: baseline;
+            align-items: center;
+
+        }
+        .box{
+            background: conic-gradient(red, pink, red);
+            width: 60px;
+            height: 60px;
+            margin: 30px;
+            border-radius: 5px;
+            text-align: center;
+            color: #fff;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <button type="button" class="btn1">Primary Button</button>
+    <button type="button" class="btn2">Secondary Button</button>
+    <button type="button" class="btn3">Text Button</button>
+    <div class="test-1">Lorem ipsum dolor sit amet.</div>
+    <span class="test-2">Lorem ipsum dolor sit.</span>
+    <!-- tables -->
+    <table class="table1">
+        <thead>
+            <tr>
+                <th>S/N</th>
+                <th>NAME</th>
+                <th>USER ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>Solomon</td>
+                <td>8934</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Solomon</td>
+                <td>8934</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Solomon</td>
+                <td>8934</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>Solomon</td>
+                <td>8934</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- class Work -->
+
+    <table class="table2">
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>PHONE</th>
+                <th>EMAIL</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>SOLOMON</td>
+            <td>+2348037677700</td>
+            <td>solomonex@bizmazmarrow.com</td>
+        </tr>
+        <tr>
+            <td>SOLOMON</td>
+            <td>+2348037677700</td>
+            <td>solomonex@bizmazmarrow.com</td>
+        </tr>
+        <tr>
+            <td>SOLOMON</td>
+            <td>+2348037677700</td>
+            <td>solomonex@bizmazmarrow.com</td>
+        </tr>
+        <tr>
+            <td>SOLOMON</td>
+            <td>+2348037677700</td>
+            <td>solomonex@bizmazmarrow.com</td>
+        </tr>
+    </table>
+
+    <!-- flex-grid  -->
+     <div class="container">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+        <div class="card">Card 4</div>
+     </div>
+
+     <div class="box"><i class="fa-solid fa-home"></i></div>
+</body>
+</html>
